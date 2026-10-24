@@ -1,0 +1,51 @@
+{
+  "name": "dsh-experience-skill",
+  "version": "0.1.0",
+  "description": "Self-evolving experience plugin for DeepSeek Harness: one experience-retrieval skill entry + local experience_search tool, with batched learning and two-round validation.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22.19",
+    "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "experience",
+    "skill",
+    "retrieval",
+    "self-evolving"
+  ],
+  "author": "zjwerds",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjwerds/dsh-experience-skill.git"
+  },
+  "homepage": "https://github.com/zjwerds/dsh-experience-skill#readme",
+  "bugs": {
+    "url": "https://github.com/zjwerds/dsh-experience-skill/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# dsh-experience-skill bundle patch
+# 把 host-only 经验插件插入当前 profile 的插件行。
+# 唯一 Skill List 入口：experience-retrieval（描述中文），具体经验由 experience_search 本地筛选。
+- insert:
+    - id: experience-skill
+      name: 'dsh-experience-skill'
